@@ -19,6 +19,9 @@
     /*=============FONTS================*/
     --body-font:"Syne", sans-serif;
     --biggest-font-size: 2rem;
+    --mulave-title: 3rem;
+    --mulave-add: 1rem;
+    --mulave-info: 1.5rem;
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
     --h3-font-size: 1rem;
@@ -44,6 +47,7 @@
 @media screen and (min-width: 1150px){
     :root{
         --biggest-font-size:4.5rem;
+        
         --h1-font-size: 2.25rem;
         --h2-font-size: 1.5rem;
         --h3-font-size: 1.25rem;
@@ -586,11 +590,12 @@ body.dark-theme{
 
 
 
-/*=============== Work ======================*/
+/*=============== Work ================================================*/
 
 .work__container{
     row-gap: 2rem;
     padding: 0 10vw; 
+    
 }
 
 .work__card {
@@ -614,7 +619,6 @@ body.dark-theme{
     filter: grayscale(1);
     transition: transform 0.5s ease, filter 0.5s ease; 
     height: 600px;
-
     width: 100%;
     object-fit: cover;
 }
@@ -739,8 +743,57 @@ body.dark-theme{
 
 
  
+/*================= MULAVE ==========================*/
 
+.work__mulave{
+    row-gap: 2rem;
+    padding: 0 1vw; 
+    background-color: black;
+    
+}
 
+.work__img_mulave{
+    filter: grayscale(1);
+    transition: transform 0.5s ease, filter 0.5s ease; 
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.work__link:hover .work__img_mulave{
+    transform: scale(1.1);
+    filter: none;
+    
+}
+.work__img_logo{
+    padding: 4vw 4vw ; 
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit:fill;
+}
+.Mulave_txt{
+    color: white;
+    font-size: var(--mulave-add);
+    padding: 0 3vw; 
+}
+
+.title_mulave{
+    color: white;
+    padding: 8vw 0 0 0;
+    font-size: var(--mulave-title);
+}
+
+.txt_small{
+    color: white;
+    font-size: var(--mulave-info);
+    padding: 1.5vw;
+    
+}
+.small{
+    color: white;
+    padding: 0vw 0vw 2vw 0vw;
+}
 
 /*=============== Testimonial ======================*/
 .testimonial__container{
@@ -1001,7 +1054,7 @@ body.dark-theme{
 
 
 
-/*===============  Screen Sizes ======================*/
+/*===============  Screen Sizes  for Responsiveness ======================*/
 /*------------------  Small Device --------------------*/
 
 @media screen and (max-width: 320px){
@@ -1204,6 +1257,7 @@ body.dark-theme{
     .work__container{
         grid-template-columns: repeat(3, 350px);
         row-gap: 4rem;
+        
     }
 
     .work__container2{
@@ -1215,6 +1269,12 @@ body.dark-theme{
         grid-template-columns: repeat(2, 550px);
         row-gap: 2rem;
     }
+
+    .work__mulave{
+        grid-template-columns: repeat(2, 550px);
+        row-gap: 2rem;
+    }
+    
 
     
 
