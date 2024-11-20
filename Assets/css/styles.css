@@ -591,6 +591,97 @@ body.dark-theme{
 
 
 /*=============== Work ================================================*/
+/* Style for the floating question container */
+.floating-question {
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 1000; 
+    
+  }
+  
+  /* Style for the question mark */
+  .question-mark {
+    font-size: 24px; 
+    font-weight: bold;
+    color: #fff;
+    background-color: var(--first-color);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease; 
+    animation: tilt 0.6s ease-in-out infinite; 
+  }
+  
+  /* Tooltip styling */
+  .floating-question .tooltip-text {
+    visibility: hidden;
+    width: 700px; 
+    background-color: #333; 
+    color: #fff; 
+    text-align: center; 
+    padding: 10px; 
+    border-radius: 6px; 
+    position: absolute; 
+    top: 50%; 
+    right: calc(100% + 10px);
+    transform: translateY(-50%); 
+    z-index: 1001; 
+    opacity: 0; 
+    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+    white-space: normal; 
+    word-wrap: break-word; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Tooltip arrow */
+  .floating-question .tooltip-text::after {
+    content: '';
+    position: absolute;
+    top: 50%; 
+    left: 100%;
+    transform: translateY(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent #333;
+  }
+  
+
+  .floating-question:hover .tooltip-text {
+    visibility: visible; 
+    opacity: 1; 
+  }
+  
+
+  .floating-question:hover .question-mark {
+    animation: tilt 0.6s ease-in-out; 
+  }
+  
+
+  @keyframes tilt {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(10deg); 
+    }
+    50% {
+      transform: rotate(-10deg); 
+    }
+    75% {
+      transform: rotate(5deg); 
+    }
+    100% {
+      transform: rotate(0deg); 
+    }
+  }
+  
+  
+  
 
 .work__container{
     row-gap: 2rem;
