@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <link rel = "stylesheet" href="Assets/css/styles.css">
+    <link rel = "shortcut icon" href="Assets/img/favicon.png">
+    <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css">
+
+
+
+
+    <title>About Me</title>
+</head>
+<body>
+    
+
+    <!--================ HEADER =================-->
+    <header class="header header-pages" id="header">
+        <nav class="nav container">
+             <a href="index.html" class="nav__logo">Eugine</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">About Me</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="work.html" class="nav__link">Portfolio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contact.html" class="button">Contact Me</a>
+                    </li> 
+                </ul>
+                <!-- CLOSE   -->
+                <div class="nav__close" id="nav-close">
+                    <i class ="ri-close-line"></i>
+                </div>
+            </div>
+            <div class="nav__actions">
+                <!-- Theme BUTTON-->
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+                <!-- Toggle -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class ="ri-apps-2-line"></i>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+
+
+    <!--================ MAIN =================-->
+    <main class="main">
+
+   
+        <div class="floating-question">
+            <div class="question-mark">?</div> 
+            <span class="tooltip-text">These Videos are posted on compressed and 
+                low quality for easy render.
+                </span>
+          </div>
+
+          
+      <!--====================== WORK ========================-->
+      <section class="work section">
+              <!--================ Seperator =================-->
+
+ 
+              <input type="checkbox" id="theme-mode" class="mode" hidden="" />
+              <div class="layer_container">
+                <div class="wrap">
+                  <input
+                    checked=""
+                    type="radio"
+                    id="rd-1"
+                    name="radio"
+                    class="rd-1"
+                    hidden=""
+                  />
+                  <label for="rd-1" class="label" style="--index: 0;">
+                    <a href="work.html" class="label">
+                        <span>Digital Arts</span>
+                    </a>
+                  </label>
+              
+                  <input type="radio" id="rd-2" name="radio" class="rd-2" hidden="" />
+                  <label for="rd-2" class="label" style="--index: 1;">
+                    <a href="video.html" class="label">
+                        <span>Video Edits</span>
+                    </a>
+                  </label>
+              
+                  
+                  <div class="slidebar2"></div>
+                </div>
+              </div>
+              
+               <!--================ Seperator =================-->
+
+                <!--================ Video Player =================-->
+              <div class="playercontainer">
+                <div class="video-container vido">
+
+
+                    <!--================ Video =================-->
+                    <div class="video-wrapper">
+                        <video class="video" onclick="togglePlayPause(this)" onloadedmetadata="setTimeline(this)">
+                            <source src="Assets/video-edits/Sample.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="play-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                        <div class="controls">
+                            <input class="timeline" type="range" value="0" step="0.1">
+                            <h2 class="work__title"><b>HELLZ CITY</b></h2>
+                            <span class="work__subtitle">Sample Output for HC HOGZ</span>
+                        </div>
+                    </div>
+                
+
+                    <!--================ Video =================-->
+                    <div class="video-wrapper">
+                        <video class="video" onclick="togglePlayPause(this)" onloadedmetadata="setTimeline(this)">
+                            <source src="Assets/video-edits/Sample.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="play-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                        <div class="controls">
+                            <input class="timeline" type="range" value="0" step="0.1">
+                            <h2 class="work__title"><b>HELLZ CITY</b></h2>
+                            <span class="work__subtitle">Sample Output for HC HOGZ</span>
+                        </div>
+                    </div>
+                
+                    <!--================ Video =================-->
+                    <div class="video-wrapper">
+                        <video class="video" onclick="togglePlayPause(this)" onloadedmetadata="setTimeline(this)">
+                            <source src="Assets/video-edits/Sample.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="play-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                        <div class="controls">
+                            <input class="timeline" type="range" value="0" step="0.1">
+                            <h2 class="work__title"><b>HELLZ CITY</b></h2>
+                            <span class="work__subtitle">Sample Output for HC HOGZ</span>
+                        </div>
+                    </div>
+                
+                
+                    <!--================ Video =================-->
+                    <div class="video-wrapper">
+                        <video class="video" onclick="togglePlayPause(this)" onloadedmetadata="setTimeline(this)">
+                            <source src="Assets/video-edits/Sample.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="play-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                        <div class="controls">
+                            <input class="timeline" type="range" value="0" step="0.1">
+                            <h2 class="work__title"><b>HELLZ CITY</b></h2>
+                            <span class="work__subtitle">Sample Output for HC HOGZ</span>
+                        </div>
+                    </div>
+
+                    <!--================ Video =================-->
+                    <div class="video-wrapper">
+                        <video class="video" onclick="togglePlayPause(this)" onloadedmetadata="setTimeline(this)">
+                            <source src="Assets/video-edits/Sample.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="play-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                        <div class="controls">
+                            <input class="timeline" type="range" value="0" step="0.1">
+                            <h2 class="work__title"><b>HELLZ CITY</b></h2>
+                            <span class="work__subtitle">Sample Output for HC HOGZ</span>
+                        </div>
+                    </div>
+
+
+
+                    </div>
+                </div>
+
+
+
+</section>
+
+
+<!--------------------------END------------------------------------------------>
+    </main>
+
+
+
+    <!--================ Footer =================-->
+  <footer class="footer">
+    <div class="footer__container container grid">
+        <div class="footer__content grid">
+            <a href="index.html" class="footer__logo"> Eugine</a>
+
+            <ul class="footer__links">
+                <li>
+                    <a href="about.html" class="footer__link">About Me</a>
+                </li>
+                <li>
+                    <a href="work.html" class="footer__link">Portfolio</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="footer__link">Contact Me</a>
+                </li>
+            </ul>
+
+            <div class="footer__social">
+                <a href="https://github.com/RapNinja16" target="_blank" class="footer__social-link">
+                    <i class="ri-github-fill"></i>
+                </a>
+                <a href="https://www.instagram.com/yugenyuki16/" target="_blank" class="footer__social-link">
+                    <i class="ri-instagram-line"></i>
+                </a>
+                <a href="https://rapninja16.github.io" target="_blank" class="footer__social-link">
+                    <i class="ri-links-line"></i>
+                </a>
+                <a href="https://www.tiktok.com/@yugenyuki16" target="_blank" class="footer__social-link">
+                    <i class="ri-tiktok-fill"></i>
+                </a>
+                <a href="https://www.facebook.com/EuJhinVirtuoso" target="_blank" class="footer__social-link">
+                    <i class="ri-facebook-circle-fill"></i>
+                </a>
+            </div>
+
+            <span class="footer__copy">
+               This is a derived version of the original template &#169; All Rights Reserved to Bedimcode
+            </span>
+        </div>
+
+    </div>
+</footer>
+
+
+
+
+    <!--===================SCRIPTS===========================-->
+    <script src ="Assets/js/index.js"></script>
+    <script src ="Assets/js/main.js"></script>
+    <script src ="Assets/js/player.js"></script>
+
+
+
+</body>
+</html>
