@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
           
         } else {
           video.pause();
-    
           playButton.classList.remove("hide");
         }
       });
@@ -32,6 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     .closest(".video-wrapper")
                     .querySelector(".play-button");
                 otherPlayButton.classList.remove("hide");
+                playButton.classList.add("hide");
                 }
             });
           
