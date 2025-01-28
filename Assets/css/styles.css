@@ -1701,6 +1701,10 @@ body.dark-theme{
   }
   
 
+.link{
+    text-align: center;
+    text-decoration: none;
+}
 
   .playercontainer{
   
