@@ -9,6 +9,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const updateTimeline = () => {
       timeline.max = video.duration;
       timeline.value = video.currentTime;
+      updateTimelineStyle();
+    };
+
+    const updateTimelineStyle = () => {
+      const progress = (timeline.value / timeline.max) * 100 || 0; // Calculate progress percentage
+      timeline.style.background = `linear-gradient(to right, red ${progress}%, #ccc ${progress}%)`;
     };
 
     const pauseAllVideos = () => {
@@ -46,12 +52,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     video.addEventListener("timeupdate", () => {
       timeline.value = video.currentTime;
+      updateTimelineStyle(); // Update timeline style on time update
     });
 
     video.addEventListener("loadedmetadata", updateTimeline);
 
     timeline.addEventListener("input", () => {
       video.currentTime = timeline.value;
+      updateTimelineStyle(); // Update timeline style when user drags the timeline
     });
   });
 });
