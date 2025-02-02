@@ -1372,6 +1372,7 @@ body.dark-theme{
     gap: 50px;
     width: 100%;
     max-width: 1200px;
+   
   }
   
   .video-wrapper {
@@ -1381,7 +1382,7 @@ body.dark-theme{
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
-  
+    
   
   }
 
@@ -1507,7 +1508,20 @@ body.dark-theme{
     }
    
     
+    .video-wrapper {
+        
+        
+        background-color: blue;
+
       
+      
+      }
+      .video-container {
+    
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        align-items: center;
+
+      }
 }
 
 /*------------------  Medium Device --------------------*/
@@ -1533,7 +1547,21 @@ body.dark-theme{
         justify-content: center;
     }
     
-   
+
+    .video-container {
+    
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      }
+
+
+    .video-wrapper {
+        
+        
+        background-color: red;
+
+      
+      
+      }
     
 }
 
@@ -1577,6 +1605,7 @@ body.dark-theme{
         justify-self: center;
         margin-top: 1.5rem;
     }
+
 
 }
 
