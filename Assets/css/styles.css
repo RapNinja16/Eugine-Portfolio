@@ -1494,7 +1494,7 @@ body.dark-theme{
 /*===============  Screen Sizes  for Responsiveness ======================*/
 /*------------------  Small Device --------------------*/
 
-@media screen and (max-width: 320px){
+@media (min-width: 30px) and (max-width: 480px){
     .container{
         margin-inline: 1rem;
     }
@@ -1526,7 +1526,8 @@ body.dark-theme{
 
 /*------------------  Medium Device --------------------*/
 
-@media screen and (min-width: 576px) {
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
     
     .services__container{
         grid-template-columns: 320px;
@@ -1564,6 +1565,7 @@ body.dark-theme{
       }
     
 }
+
 
 
 @media screen and (min-width: 768px) {
