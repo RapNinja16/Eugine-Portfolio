@@ -1507,15 +1507,8 @@ body.dark-theme{
         grid-template-columns: repeat(4, max-content);
     }
    
-    
-    .video-wrapper {
-        
-        
-        background-color: blue;
 
       
-      
-      }
       .video-container {
     
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -1555,15 +1548,7 @@ body.dark-theme{
       }
 
 
-    .video-wrapper {
-        
-        
-        background-color: red;
 
-      
-      
-      }
-    
 }
 
 
