@@ -169,6 +169,8 @@ body.dark-theme{
 .container{
     max-width: 1120px;
     margin-inline:1.5rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .grid{
@@ -1147,13 +1149,7 @@ body.dark-theme{
 
   /* Vido Edits */
 /* Theme Mode Styles */
-.mode + .layer_container {
-    --color-pure: #000;
-    --color-primary: #e8e8e8;
-    --color-secondary: #212121;
-    --muted: #b8b8b8;
-  }
-  
+
   .layer_container {
  
     position: inherit;
@@ -1553,7 +1549,7 @@ body.dark-theme{
 
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px)and (max-width: 1149px) {
     .services__container{
         grid-template-columns: repeat(2, 320px);
     }
