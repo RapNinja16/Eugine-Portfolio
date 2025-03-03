@@ -834,7 +834,15 @@ body.dark-theme{
     padding-bottom: 4rem;
 }
 
-
+.subtitle_section{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    margin-bottom:30px;
+    
+    
+}
  
 /*================= MULAVE ==========================*/
 
